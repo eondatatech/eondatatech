@@ -20,11 +20,11 @@ object SparkS3DataProcessor {
 
     // Replace Key with your AWS account key (You can find this on IAM
     spark.sparkContext
-      .hadoopConfiguration.set("fs.s3a.access.key", "AKIA6N4QTQFKESECNAFI")
+      .hadoopConfiguration.set("fs.s3a.access.key", "")
 
     // Replace Key with your AWS secret key (You can find this on IAM
     spark.sparkContext
-      .hadoopConfiguration.set("fs.s3a.secret.key", "WTrvLLQJ0wv2pD0rs0RiV/2jaHlsOGaAS+gFWryy")
+      .hadoopConfiguration.set("fs.s3a.secret.key", "")
 
     spark.sparkContext
       .hadoopConfiguration.set("fs.s3a.impl","fs.s3a.S3AFileSystem")
