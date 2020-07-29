@@ -36,6 +36,7 @@ object SparkJob {
     //create spark session
     println("============Create spark session=====-START")
     this.createSparkSession()
+    EonFactory.dataProcessor(args(0),args(1),args(2))
     println("============Create spark session=====-END")
   }
 }
